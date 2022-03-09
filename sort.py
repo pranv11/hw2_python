@@ -1,11 +1,8 @@
-from sqlalchemy import null
-
-
 def sort_list(list1):
     n = len(list1)
     i = 0
     if n == 0:
-        return null
+        return 0
     else:
         while i < n :
             if type(list1[i]) == int:
