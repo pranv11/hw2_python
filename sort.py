@@ -2,7 +2,7 @@ def sort_list(list1):
     n = len(list1)
     i = 0
     if n == 0:
-        return 0
+        return []
     else:
         while i < n :
             if type(list1[i]) == int:
