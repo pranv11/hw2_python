@@ -1,5 +1,4 @@
-
-file1 = open('homework2/textfiles/document.txt', encoding='utf8')
+file1 = open('homework2/document.txt', encoding='utf8')
 
 sentence = file1.read()
 
