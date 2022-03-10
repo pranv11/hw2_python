@@ -4,8 +4,8 @@ try:
     sentence = file1.read()
 
     noPeriod_Sen = sentence.replace(".","")
-    final = noPeriod_Sen.lower()
-    sentence_list = final.split()
+    
+    sentence_list = noPeriod_Sen.split()
 
     unique = []
     for word in sentence_list:
