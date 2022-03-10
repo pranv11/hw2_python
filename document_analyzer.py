@@ -1,33 +1,33 @@
-try:
-    file1 = open('homework2/textfiles/document.txt', encoding='utf8')
 
-    sentence = file1.read()
+file1 = open('homework2/textfiles/document.txt', encoding='utf8')
 
-    noPeriod_Sen = sentence.replace(".","")
-    
-    sentence_list = noPeriod_Sen.split()
+sentence = file1.read()
 
-    unique = []
-    for word in sentence_list:
-        if word not in unique:
-            unique.append(word)
+noPeriod_Sen = sentence.replace(".","")
 
-    value = []
-    for i in range(len(unique)):
-        value.append(sentence_list.count(unique[i]))
+sentence_list = noPeriod_Sen.split()
 
-    dictionary_sen = {}
+unique = []
+for word in sentence_list:
+    if word not in unique:
+        unique.append(word)
 
-    for i in range(len(unique)):
-        dictionary_sen [unique[i]] = value[i]
+unique.sort()
+
+value = []
+for i in range(len(unique)):
+    value.append(sentence_list.count(unique[i]))
+
+dictionary_sen = {}
+
+for i in range(len(unique)):
+    dictionary_sen [unique[i]] = value[i]
 
 
-    dictionary_sorted = sorted(dictionary_sen , key=dictionary_sen.get, reverse=True)[:5]
+dictionary_sorted = sorted(dictionary_sen , key=dictionary_sen.get, reverse=True)[:5]
 
 
-    for i in range(len(dictionary_sorted)):
-        print(" "+str(dictionary_sorted[i]) + ": " + str(dictionary_sen[dictionary_sorted[i]]))
+for i in range(len(dictionary_sorted)):
+    print(str(dictionary_sorted[i]) + ": " + str(dictionary_sen[dictionary_sorted[i]]))
 
-except:
-    print("the input is invalid")
-    
+

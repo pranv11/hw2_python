@@ -1,32 +1,30 @@
-def sort_list(list1):
-    n = len(list1)
+def sort_list(num_list):
+    n = len(num_list)
     i = 0
-    if n == 0:
-        return []
-    else:
-        while i < n :
-            if type(list1[i]) == int:
-                x = 0
-
-                while x < n - i - 1 :
-                    if list1[x] > list1[x+1]:
-                        tmp = list1[x]
-                        list1[x] = list1[x+1]
-                        list1[x+1] = tmp
-                    x = x+1
-                i += 1
-            return list1
-
+    try:
+        while (i < n):
+            
+            j = 0
+            while (j < n - i - 1) :
+                if (num_list[j] > num_list[j+1]):
+                    tmp = num_list[j]
+                    num_list[j] = num_list[j+1]
+                    num_list[j+1] = tmp
+                j += 1
+            i += 1    
+        return num_list
+    except:
+        print("Invalid Input")
 
 
 def printL(list1):
     for i in range(len(list1)):
         print(list1[i])
 
+# abc= [1,6,4,2,6]
+abc = ['a', 'c','r', 'b']
 
-    abc = []
-
-    printL(sort_list(abc))
+printL(sort_list(abc))
 
 
 
