@@ -26,7 +26,7 @@ try:
 
 
     for i in range(len(dictionary_sorted)):
-        print(str(dictionary_sorted[i]) + " : " + str(dictionary_sen[dictionary_sorted[i]]))
+        print(" "+str(dictionary_sorted[i]) + ": " + str(dictionary_sen[dictionary_sorted[i]]))
 
 except:
     print("the input is invalid")
