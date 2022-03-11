@@ -1,18 +1,18 @@
-def sort_list(num_list):
-    n = len(num_list)
+def sort_list(list1):
+    n = len(list1)
     i = 0
     try:
         while (i < n):
             
             j = 0
             while (j < n - i - 1) :
-                if (num_list[j] > num_list[j+1]):
-                    tmp = num_list[j]
-                    num_list[j] = num_list[j+1]
-                    num_list[j+1] = tmp
+                if (list1[j] > list1[j+1]):
+                    temp = list1[j]
+                    list1[j] = list1[j+1]
+                    list1[j+1] = temp
                 j += 1
             i += 1    
-        return num_list
+        return list1
     except:
         print("Invalid Input")
 
