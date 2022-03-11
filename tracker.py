@@ -1,4 +1,4 @@
-def function(func):
+def func_counter(func):
     def something(*arg):
         something.aNumber += 1
         function(*arg)
