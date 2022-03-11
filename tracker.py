@@ -1,10 +1,6 @@
-def func_counter(func):
-    
-    def something(counter = 0):
-        
-        func()
-        counter += 1
-    
-    return something  
-
-
+def func_counter(f):
+    def wrapped(*args, **kwargs):
+        wrapped.counter += 1
+        return f(*args, **kwargs)
+    wrapped.counter = 0
+    return wrapped
