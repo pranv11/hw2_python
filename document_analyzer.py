@@ -25,9 +25,9 @@ for i in range(len(unique)):
 
 dictionary_sorted = sorted(dictionary_sen , key=dictionary_sen.get, reverse=True)[:5]
 
-
+print("\r")
 for i in range(len(dictionary_sorted)):
-    print("\r")
-    print( str(dictionary_sorted[i]) + ": " + str(dictionary_sen[dictionary_sorted[i]]))
+    
+    print(str(dictionary_sorted[i]) + ": " + str(dictionary_sen[dictionary_sorted[i]]))
 
 
