@@ -1,6 +1,6 @@
 def func_counter(func):
-    def something(*arg):
-        something.aNumber += 1
-        function(*arg)
-    something.counter = 0
+    def something(counter = 0):
+        counter += 1
+        function()
+    
     return something  
