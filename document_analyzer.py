@@ -27,6 +27,6 @@ dictionary_sorted = sorted(dictionary_sen , key=dictionary_sen.get, reverse=True
 
 
 for i in range(len(dictionary_sorted)):
-    print('\r'+ str(dictionary_sorted[i]) + ": " + str(dictionary_sen[dictionary_sorted[i]]))
+    print('/r'+ str(dictionary_sorted[i]) + ": " + str(dictionary_sen[dictionary_sorted[i]]))
 
 
